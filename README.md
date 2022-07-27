@@ -3,6 +3,8 @@ COMP 4905 HONOURS PROJECT
 
 Name: Steven Rhodes
 
+DEMO VIDEO: https://www.youtube.com/watch?v=Lwxow8iDGrY&feature=youtu.be
+
 File Contents:
 		i)application (folder) => This is the main application and its files
 			a)node_modules
