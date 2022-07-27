@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>COMP 4905 Project</title>
+        <link href="/css/cover2.css" rel="stylesheet">
+        <link href="/css/menu.css" rel="stylesheet">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            .border{
+                border: none;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default border">
+            <div class="container-fluid">
+                <%- messages() %>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="toUserAccount"><a href="/users/userAccount"><img src=<%= (locals.user.avatar)?locals.user.avatar:'-' %> height ="50" width="70" /></a></li></a>
+                        <li style="background-color:#4682B4;"><a style="color: #FFFFFF;" href="/users/menu">Menu</a></li>
+                        <li style="background-color:#CD5C5C; margin-left:10px;"><a style="color: #FFFFFF;" href="/users/logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <button id ="btn"><a href="/users/gamemode">Game Modes</a></button>
+            <br>
+            <br>
+            <button id ="btn"><a href="/users/tutorials">Tutorials</a></button>
+            <br>
+            <br>
+            <button id ="btn"><a href="/users/userAccount">User Account</a></button>
+            <br>
+            <br>
+            <button id ="btn"><a href="/users/highScores">High Scores</a></button>
+        </div>
+    </body>
+</html>

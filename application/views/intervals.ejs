@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Intervals Game</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.38/Tone.js"></script>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/cover2.css" rel="stylesheet">
+        <link href="/css/intervals.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-default border">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="toUserAccount"><a href="/users/userAccount"><img src=<%= (locals.user.avatar)?locals.user.avatar:'-' %> height ="50" width="70" /></a></li></a>
+                        <li style="background-color:#4682B4;"><a style="color: #FFFFFF;" href="/users/menu">Menu</a></li>
+                        <li style="background-color:#CD5C5C; margin-left:10px;"><a style="color: #FFFFFF;" href="/users/logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="rectangle" style="width:900px;height:400px;border:1px solid #000; background-color: #909090;">
+            <div class="root-label">
+                Root Note
+            </div>
+            <div class="rootNote">
+                <div class="save">
+                    <button type="button" id="gameover" class="gameover-button">Game Over</button>
+                </div>
+                <button type="button" id="root-button" class="root-button">C</button>
+                <button type="button" id="play-root-button" class="play-root-button">Play Root Note</button>
+                 How Many Half Steps Between the 2 Notes?
+                 <button type="button" id="score" class="score">5</button>
+            </div>
+            <div class="save">
+                <button type="button" id="save" class="save-button">Would you like to save your score?</button>
+            </div>
+            <form id="save-form" action="/users/intervalSave" method="post">
+                <input type="text" id="saved-score" class="saved-score" name="score" value=""></input>
+                <input type="text" id="username-db" class="username-db" name="username" value=<%= user.username %>></input>
+                <input type="text" id="password-db" class="password-db" name="password" value=<%= user.password %>></input>
+                <button type="button" id="yes" class="yes-button">Yes</button>
+            </form>
+            <button type="button" id="no" class="no-button"><a style="color:#000000;" href="/users/menu">No</a></button>
+            <div class="choices-easy" id="choices-easy">
+                <div class="btn-toolbar">
+                  <button type="button" id="easy-1" class="button">Submit</button>
+                  <button type="button" id="easy-2" class="button">Cancel</button>
+                  <button type="button" id="easy-3" class="button">Submit</button>
+              </div>
+            </div>
+            <div class="choices-medium" id="choices-medium">
+                <div class="btn-toolbar">
+                  <button type="button" id="med-1" class="button">Submit</button>
+                  <button type="button" id="med-2" class="button">Cancel</button>
+                  <button type="button" id="med-3" class="button">Submit</button>
+                  <button type="button" id="med-4" class="button">Cancel</button>
+                  <button type="button" id="med-5" class="button">Submit</button>
+              </div>
+            </div>
+            <div class="choices-hard" id="choices-hard">
+                <div class="btn-toolbar">
+                  <button type="button" id="hard-1" class="button">Submit</button>
+                  <button type="button" id="hard-2" class="button">Cancel</button>
+                  <button type="button" id="hard-3" class="button">Submit</button>
+                  <button type="button" id="hard-4" class="button">Cancel</button>
+                  <button type="button" id="hard-5" class="button">Submit</button>
+                  <button type="button" id="hard-6" class="button">Cancel</button>
+                  <button type="button" id="hard-7" class="button">Submit</button>
+                </div>
+            </div>
+            <div class="choices">
+                <div class="child">
+                  <button type="button" id="repeat" class="repeat">Play Interval</button>
+                  <button type="button" id="hardDiff" class="button3">Hard</button>
+                  <button type="button" id="mediumDiff" class="button2">Medium</button>
+                  <button type="button" id="easyDiff" class="button2">Easy</button>
+                </div
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/javaScript/intervals.js"></script>
+
+    </body>
+</html>

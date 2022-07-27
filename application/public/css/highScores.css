@@ -1,0 +1,75 @@
+.navbar{
+    background:transparent !important;
+}
+
+.container{
+    text-align: center;
+    width: 1300px;
+    height: 200px;
+}
+
+#btn{
+    font-size: 25px;
+}
+
+.header{
+    text-align: center;
+    width: 1300px;
+    height: 300px;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.border{
+    border: none;
+    margin-top: 10px;
+}
+
+.first{
+    margin-right: 40px;
+}
+
+.tables{
+    margin-left: 530px;
+    margin-right: 550px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+body {
+  height: 100%;
+  background-image: url("/css/instruments.jpg");
+  background-size: cover;
+  background-position: 70% 20%;
+}
+
+.scalesGame{
+    margin-left: 60px;
+    height: 40px;
+    width: 60px;
+    font-size: 10px;
+    background-color: #5F9EA0;
+}
+
+.intervalGame{
+    height: 40px;
+    width: 60px;
+    font-size: 10px;
+    margin-left: 40px;
+}
+
+.toUserAccount{
+    margin-right: 0px;
+    margin-top: -15px;
+}
