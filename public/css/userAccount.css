@@ -1,0 +1,216 @@
+.navbar{
+    background:transparent !important;
+}
+
+.container{
+    text-align: center;
+    width: 1300px;
+    height: 200px;
+    padding-top: 50px;
+}
+
+#btn{
+    font-size: 25px;
+}
+
+.header{
+    text-align: center;
+    width: 1300px;
+    height: 300px;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.border{
+    border: none;
+    margin-top: 10px;
+}
+
+.first{
+    margin-right: 40px;
+}
+
+.tables{
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+    position:relative;
+    margin-left: 60px;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+body {
+  height: 100%;
+  background-image: url("/css/instruments.jpg");
+  background-size: cover;
+  background-position: 70% 70%;
+}
+
+.profilePic{
+    position:relative;
+    height: 150px;
+    width: 150px;
+    margin-left: 300px;
+}
+
+.profilePic2{
+    position:absolute;
+    height: 50px;
+    width: 170px;
+    margin-left: 50px;
+    margin-top: 20px;
+    z-index: 2
+
+}
+
+.profilePic3{
+    position:absolute;
+    height: 50px;
+    width: 170px;
+    margin-left: 300px;
+    margin-top: 20px;
+    z-index: 2
+}
+
+.usernameTitle{
+    margin-left: 330px;
+    position:relative;
+}
+
+.scaleScore{
+    position: absolute;
+    z-index: 3;
+    height: 25px;
+    width: 30px;
+    margin-top: 80px;
+    margin-left: 120px;
+}
+
+.intervalScore{
+    position: absolute;
+    z-index: 3;
+    height: 25px;
+    width: 30px;
+    margin-top: 80px;
+    margin-left: 370px;
+}
+
+.avatarChoices{
+    position:absolute;
+    margin-left: -160px;
+    margin-top: -50px;
+    z-index: 4;
+    display:none;
+}
+
+.avatar1{
+    position:absolute;
+    margin-left: 50px;
+    margin-top: 150px;
+    z-index: 5;
+}
+
+.avatar2{
+    position:absolute;
+    margin-left: 200px;
+    margin-top: 150px;
+    z-index: 5;
+}
+
+.avatar3{
+    position:absolute;
+    margin-left: 350px;
+    margin-top: 150px;
+    z-index: 5;
+}
+
+.avatar4{
+    position:absolute;
+    margin-left: 500px;
+    margin-top: 150px;
+    z-index: 5;
+}
+
+.avatar5{
+    position:absolute;
+    margin-left: 50px;
+    margin-top: 0px;
+    z-index: 5;
+}
+
+.avatar6{
+    position:absolute;
+    margin-left: 200px;
+    margin-top: 0px;
+    z-index: 5;
+}
+
+.avatar7{
+    position:absolute;
+    margin-left: 350px;
+    margin-top: 0px;
+    z-index: 5;
+}
+
+.avatar8{
+    position:absolute;
+    margin-left: 500px;
+    margin-top: 0px;
+    z-index: 5;
+}
+
+.avatarClass1{
+    display:none;
+}
+
+.avatarClass2{
+    display:none;
+}
+
+.avatarClass3{
+    display:none;
+}
+
+.avatarClass4{
+    display:none;
+}
+
+.avatarClass5{
+    display:none;
+}
+
+.avatarClass6{
+    display:none;
+}
+
+.avatarClass7{
+    display:none;
+}
+
+.avatarClass8{
+    display:none;
+}
+
+.username-db{
+    display:none;
+}
+
+.password-db{
+    display:none;
+}
+
+.toUserAccount{
+    margin-right: 0px;
+    margin-top: -15px;
+}

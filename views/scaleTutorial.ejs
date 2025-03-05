@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Scale Tutorial</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.38/Tone.js"></script>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/cover2.css" rel="stylesheet">
+        <link href="/css/scaleTutorial.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default border">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="toUserAccount"><a href="/users/userAccount"><img src=<%= (locals.user.avatar)?locals.user.avatar:'-' %> height ="50" width="70" /></a></li></a>
+                        <li style="background-color:#4682B4;"><a style="color: #FFFFFF;" href="/users/menu">Menu</a></li>
+                        <li style="background-color:#CD5C5C; margin-left:10px;"><a style="color: #FFFFFF;" href="/users/logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="rectangle" style="width:900px;height:400px;border:1px solid #000; background-color: #909090;">
+
+            <textarea name="name" rows="10" cols="40" id="scales-tutorial-intro" class="scales-tutorial-intro">                                 <== Welcome to the Scales Game Tutorial==>
+
+        To play scales mode you will be guessing what scales are being played to test and
+            improve your musical ear. Click "START" to see the steps to play the game:
+            </textarea>
+
+            <textarea name="name" rows="10" cols="40" id="step4b" class="step4b">
+There are 8 possible scales that will occur in this game.
+Each scale has 7 notes. Scales that usually have 5 notes (e.g., Pentatonic scales) are extended to 7-note scales by continuing the scale back to the root and beyond.
+    H = Half Step
+    W = Whole Note (2 Half Steps )
+
+        Scale #1: Major Scale
+        -----------------------------
+        Formula: W - W - H - W - W - W
+        Sounds: Happy
+        Sample:
+            </textarea>
+
+            <textarea name="name" rows="10" cols="40" id="step4c" class="step4c">
+        Scale #2: Pentatonic Major Scale                               Scale #4: Minor Scale
+        ---------------------------------                                         -----------------------------
+        Formula: W - W - (W + H) - W - (W + H) - W           Formula: W - H - W - W - H - W
+        Sample:                                                                  Sounds: Sad
+                                                                                        Sample:
+
+
+        Scale #3: Blues Major Scale                                   Scale #5: Harmonic Minor Scale
+        ------------------------------------                                 -------------------------------
+        Formula: (W + H) - W - H - H - W - (W + H)           Formula: W - H - W - W - H - (W + H)
+        Sample:                                                                  Sample:
+
+            </textarea>
+
+            <textarea name="name" rows="10" cols="40" id="step4d" class="step4d">
+        Scale #6: Melodic Minor Scale                   Scale #8: Blues Minor Scale
+        ---------------------------------                               -----------------------------
+        Formula: W - H - W - W - W - W                     Formula: (W + H) - W - H - H - (W + H) - W
+        Sample:                                                           Sample:
+
+
+
+        Scale #7: Pentatonic Minor Scale
+        ------------------------------------
+        Formula: (W + H) - W - W - (W + H) - W - (W + H)
+        Sample:
+
+            </textarea>
+
+            <textarea name="name" rows="10" cols="40" id="step5" class="step5">
+                                             <== STEP 5 ==>
+
+
+                 Each game lasts 10 rounds. Keep track of your score on the top corner  ====>
+
+            </textarea>
+
+            <textarea name="name" rows="10" cols="40" id="final-step" class="final-step">
+                                                                        <== FINAL STEP ==>
+ Your final score is given. If you wish to compete for a high-score, you can save your scores for each game.
+
+ If you would like to play the "SCALES GAME" now, click "PLAY". Or click "MENU" to return to the the main menu.
+
+            </textarea>
+            <button type="button" id="major-scale" class="major-scale">Play Scale</button>
+            <button type="button" id="next-tutorial" class="next-tutorial">Next</button>
+            <button type="button" id="next-tutorial2" class="next-tutorial2">Next</button>
+            <button type="button" id="next-tutorial3" class="next-tutorial3">Next</button>
+            <button type="button" id="next-tutorial4" class="next-tutorial4">Next</button>
+            <button type="button" id="pent-major-scale" class="pent-major-scale">Play Scale</button>
+            <button type="button" id="blues-major-scale" class="blues-major-scale">Play Scale</button>
+            <button type="button" id="minor-scale" class="minor-scale">Play Scale</button>
+            <button type="button" id="harm-minor-scale" class="harm-minor-scale">Play Scale</button>
+            <button type="button" id="mel-minor-scale" class="mel-minor-scale">Play Scale</button>
+            <button type="button" id="pent-minor-scale" class="pent-minor-scale">Play Scale</button>
+            <button type="button" id="blues-minor-scale" class="blues-minor-scale">Play Scale</button>
+            <button type="button" id="final-play-game" class="final-play-game"><a style="color: #000000;" href="/users/scales">Play Game</a></button>
+            <button type="button" id="final-menu" class="final-menu"><a style="color: #000000;" href="/users/menu">Menu</a></button>
+
+            <textarea name="name" rows="10" cols="40" id="step4" class="step4">
+                                <==Step 4 ==>
+Click a scale from the options below that you think matches the played scale.
+                                    |
+                                   &#9660;
+            </textarea>
+            <textarea name="name" rows="10" cols="40" id="step3" class="step3">
+
+                        <== STEP 3 ==>
+Click "EASY", "MEDIUM", or "HARD" to change the difficulty of the game!
+
+
+
+
+
+
+
+                                                                      ===>
+
+            </textarea>
+            <textarea name="name" rows="10" cols="40" id="step2" class="step2">
+
+                                                <==Step 2 ==>
+Click "PLAY SCALE" to hear the scale. The scale with always begin with the root note heard in Step 1.
+
+                                                        |
+                                                        |
+                                                        |
+                                                        |
+                                                       &#9660;
+            </textarea>
+        <button type="button" id="start-tutorial" class="start-tutorial">Start</button>
+            <div class="root-label">
+                Root Note
+            </div>
+            <div class="rootNote">
+                <div class="save">
+                    <button type="button" id="gameover" class="gameover-button">Game Over</button>
+                </div>
+                <button type="button" id="root-button" class="root-button">C</button>
+                <textarea name="name" rows="10" cols="40" id="step1" class="step1">
+
+<== STEP 1:
+Click "Play Root Note" to hear the first note in the scale!
+                </textarea>
+                <button type="button" id="play-root-button" class="play-root-button">Play Root Note</button>
+
+                 Which scale is being played?
+                 <button type="button" id="score" class="score">5</button>
+
+            </div>
+            
+            <div class="save">
+                <button type="button" id="save" class="save-button">Would you like to save your score?</button>
+            </div>
+            <button type="button" id="yes" class="yes-button" style="color: #000000;">Yes</button>
+            <button type="button" id="no" class="no-button" style="color: #000000;">No</button>
+            <div class="choices-easy" id="choices-easy">
+                <div class="btn-toolbar">
+                  <button type="button" id="easy-1" class="button">Submit</button>
+                  <button type="button" id="easy-2" class="button">Cancel</button>
+                  <button type="button" id="easy-3" class="button">Submit</button>
+              </div>
+            </div>
+            <div class="choices-medium" id="choices-medium">
+                <div class="btn-toolbar">
+                  <button type="button" id="med-1" class="button">Submit</button>
+                  <button type="button" id="med-2" class="button">Cancel</button>
+                  <button type="button" id="med-3" class="button">Submit</button>
+                  <button type="button" id="med-4" class="button">Cancel</button>
+                  <button type="button" id="med-5" class="button">Submit</button>
+              </div>
+            </div>
+            <div class="choices-hard" id="choices-hard">
+                <div class="btn-toolbar">
+                  <button type="button" id="hard-1" class="button">Submit</button>
+                  <button type="button" id="hard-2" class="button">Cancel</button>
+                  <button type="button" id="hard-3" class="button">Submit</button>
+                  <button type="button" id="hard-4" class="button">Cancel</button>
+                  <button type="button" id="hard-5" class="button">Submit</button>
+                  <button type="button" id="hard-6" class="button">Cancel</button>
+                  <button type="button" id="hard-7" class="button">Submit</button>
+                </div>
+            </div>
+            <div class="choices">
+                <div class="child">
+                  <button type="button" id="repeat" class="repeat">Play Scale</button>
+                  <button type="button" id="hardDiff" class="button3">Hard</button>
+                  <button type="button" id="mediumDiff" class="button2">Medium</button>
+                  <button type="button" id="easyDiff" class="button2">Easy</button>
+                </div
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/javaScript/scalesTutorial.js"></script>
+
+    </body>
+</html>

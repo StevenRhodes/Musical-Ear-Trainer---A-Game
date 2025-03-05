@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>User Account</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/cover2.css" rel="stylesheet">
+        <link href="/css/userAccount.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default border">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="toUserAccount"><a href="/users/userAccount"><img src=<%= (locals.user.avatar)?locals.user.avatar:'-' %> height ="50" width="70" /></a></li></a>
+                        <li style="background-color:#4682B4;"><a style="color: #FFFFFF;" href="/users/menu">Menu</a></li>
+                        <li style="background-color:#CD5C5C; margin-left:10px;"><a style="color: #FFFFFF;" href="/users/logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="title">
+            <h2>User Account</h2>
+        </div>
+        <div class="usernameTitle">
+            <h3><%= (locals.user.username)?locals.user.username:'' %></h3>
+        </div>
+        <button type="button" class="profilePic" ><img src=<%= (locals.user.avatar)?locals.user.avatar:'-' %> id="profilePic" height ="130" width="130" /></button>
+        <button disabled type="button" class="profilePic2">Scales Highest Score</button>
+        <button disabled ="button" class="scaleScore"><%= (locals.user.scaleScore)?locals.user.scaleScore:'-' %></button>
+        <button disabled type="button" class="profilePic3">Intervals Highest Score</button>
+        <button disabled type="button" class="intervalScore"><%= (locals.user.intervalScore)?locals.user.intervalScore:'-' %></button>
+
+        <div class="avatarChoices" id="avatarChoices" style="width:700px;height:300px;border:1px solid #000; background-color: #909090;">
+            <form id="updateProfilePic1" action="/users/userAccount" method="post">
+                <input type="text" id="avatarForm1" class="avatarClass1" name="avatar" value="/css/avatarPics/cyberGuy.jpg"><button type="button" class="avatar1" ><img src="/css/avatarPics/cyberGuy.jpg" id="avatar1" height ="130" width="130" /></button></input>
+                <input type="text" id="username-db" class="username-db" name="username" value=<%= user.username %>></input>
+                <input type="text" id="password-db" class="password-db" name="password" value=<%= user.password %>></input>
+            </form>
+            <form id="updateProfilePic2" action="/users/userAccount" method="post">
+                <input type="text" id="avatarForm1" class="avatarClass2" name="avatar" value="/css/avatarPics/cyberWoman.png"><button type="button" class="avatar2" ><img src="/css/avatarPics/cyberWoman.png" id="avatar2" height ="130" width="130" /></button></input>
+                <input type="text" id="username-db" class="username-db" name="username" value=<%= user.username %>></input>
+                <input type="text" id="password-db" class="password-db" name="password" value=<%= user.password %>></input>
+            </form>
+
+            <form id="updateProfilePic3" action="/users/userAccount" method="post">
+                <input type="text" id="avatarForm3" class="avatarClass3" name="avatar" value="/css/avatarPics/happyDog.png"><button type="button" class="avatar3" ><img src="/css/avatarPics/happyDog.png" id="avatar3" height ="130" width="130" /></button></input>
+                <input type="text" id="username-db" class="username-db" name="username" value=<%= user.username %>></input>
+                <input type="text" id="password-db" class="password-db" name="password" value=<%= user.password %>></input>
+            </form>
+            <form id="updateProfilePic4" action="/users/userAccount" method="post">
+                <input type="text" id="avatarForm4" class="avatarClass4" name="avatar" value="/css/avatarPics/neutralSmile.png" ><button type="button" class="avatar4" ><img src="/css/avatarPics/neutralSmile.png"  id="avatar4" height ="130" width="130" /></button></input>
+                <input type="text" id="username-db" class="username-db" name="username" value=<%= user.username %>></input>
+                <input type="text" id="password-db" class="password-db" name="password" value=<%= user.password %>></input>
+            </form>
+
+            <form id="updateProfilePic5" action="/users/userAccount" method="post">
+                <input type="text" id="avatarForm5" class="avatarClass5" name="avatar" value="/css/avatarPics/penguin.png"><button type="button" class="avatar5" ><img src="/css/avatarPics/penguin.png" id="avatar5" height ="130" width="130" /></button></input>
+                <input type="text" id="username-db" class="username-db" name="username" value=<%= user.username %>></input>
+                <input type="text" id="password-db" class="password-db" name="password" value=<%= user.password %>></input>
+            </form>
+            <form id="updateProfilePic6" action="/users/userAccount" method="post">
+                <input type="text" id="avatarForm6" class="avatarClass6" name="avatar" value="/css/avatarPics/smileyGuy.png"><button type="button" class="avatar6" ><img src="/css/avatarPics/smileyGuy.png" id="avatar6" height ="130" width="130" /></button></input>
+                <input type="text" id="username-db" class="username-db" name="username" value=<%= user.username %>></input>
+                <input type="text" id="password-db" class="password-db" name="password" value=<%= user.password %>></input>
+            </form>
+
+            <form id="updateProfilePic7" action="/users/userAccount" method="post">
+                <input type="text" id="avatarForm7" class="avatarClass7" name="avatar" value="/css/avatarPics/sunglassesLady.png"><button type="button" class="avatar7" ><img src="/css/avatarPics/sunglassesLady.png" id="avatar7" height ="130" width="130" /></button></input>
+                <input type="text" id="username-db" class="username-db" name="username" value=<%= user.username %>></input>
+                <input type="text" id="password-db" class="password-db" name="password" value=<%= user.password %>></input>
+            </form>
+            <form id="updateProfilePic8" action="/users/userAccount" method="post">
+                <input type="text" id="avatarForm8" class="avatarClass8" name="avatar" value="/css/avatarPics/tooCoolGuy.png" ><button type="button" class="avatar8" ><img src="/css/avatarPics/tooCoolGuy.png" id="avatar8" height ="130" width="130" /></button></input>
+                <input type="text" id="username-db" class="username-db" name="username" value=<%= user.username %>></input>
+                <input type="text" id="password-db" class="password-db" name="password" value=<%= user.password %>></input>
+            </form>
+        </div>
+
+        <script src="/javaScript/userAccount.js" type="text/javascript"></script>
+
+    </body>
+</html>

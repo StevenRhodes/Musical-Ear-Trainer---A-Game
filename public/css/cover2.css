@@ -1,0 +1,42 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #228B22;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-image: url("instruments.jpg");
+  background-size: cover;
+  background-position: 70% 50%;
+}
+
+
+
+container{
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 400px;
+    z-index:3;
+}
